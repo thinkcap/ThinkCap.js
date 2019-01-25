@@ -1,0 +1,17 @@
+[package]
+name = "thinkcap.js"
+version = "0.1.0"
+authors = ["Avery Wagar\n <ajmw.subs@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "thinkcap.js"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
